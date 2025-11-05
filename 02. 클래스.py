@@ -5,7 +5,7 @@ class Shoes_shop:
         self.size = size
         self.color = color
 
-    def __str__(self):
+    def __str__(self):           #선출력해보니까 str로 해야 출력된다고 함. 왜인진 모르겠음
         return f"[{self.model}], [{self.size}], [{self.color}]"
     
     def color_change(self, new_color):
@@ -35,3 +35,4 @@ customer2 = Shoes_shop('Nike', '270', 'red')
 customer2.color_change('black')
 
 print(customer2)
+
